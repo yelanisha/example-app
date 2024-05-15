@@ -58,6 +58,7 @@
           <ul class="footer1_nav">
               <li class="nav_li"><a href="/" class="nav_li_a decnone">Menu</a></li>
               <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Products</a></li>
+              <li class="nav_li"><a href="{{ route('orders.index') }}" class="nav_li_a decnone">Orders</a></li>
           </ul>
       </div>
       <div class="footer2">

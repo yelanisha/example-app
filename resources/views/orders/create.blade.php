@@ -3,23 +3,29 @@
 @section('title', 'Создание товара')
 
 @section('content')
-<div class='container-sm justfify-content-center mt-2'>
-    <form action="{{ route('orders.store') }}" method="POST">
-        @CSRF
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Comment</label>
-            <input class="form-control" name="comment">
-            <input hidden value="1" name="user_id">
+<section class="comments">
+    <div class="contacts">
+        <img src="{{ asset('css/img/blest.png') }}" alt="" class="contacts_glitter">
+        <span class="contacts_text">Just Create</span>
+        <img src="{{ asset('css/img/ar2.png') }}" alt="" class="cont_arr">
+    </div>
+    <div class="support">
+        <img src="{{ asset('css/img/ar3.png') }}" alt="" class="supp_arr">
+        <div >
+            <p class="title">Create <span class="text_color">Order</span></p>
+            <form action="{{ route('orders.store') }}" class="support_info" method="post">
+                @csrf
+                <input class="comm_input" placeholder="Name" name="name">
+                <input class="comm_input" placeholder="Comment" name="comment">
+                <input hidden class="comm_input" name="user_id" value="1">
+                <select class="form-select" aria-label="Default select example" name="status_id">
+                    @foreach ($statuses as $key => $value)
+                        <option value="{{ $key }}">{{ $value }}</option>
+                    @endforeach
+                </select>
+                <button type="submit" class="support_butt">Send</button>
+            </form>
         </div>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Status</label>
-            <select class="form-select" aria-label="Default select example" name="status_id">
-                @foreach ($statuses as $key => $value)
-                    <option value="{{ $key }}">{{ $value }}</option>
-                @endforeach
-            </select>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-</div>
+    </div>
+</section>
 @endsection

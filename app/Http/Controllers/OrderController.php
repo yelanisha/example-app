@@ -16,7 +16,7 @@ class OrderController extends Controller
     public function index()
     {
         $orders = Order::with('owner')->get();
-        
+        //dd($orders);
         return view('orders.index', compact('orders'));
     }
 
@@ -35,16 +35,15 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request->products);
-        /*
-        $array = [];
+        // dd($request);
+        
+        // $array = [];
 
-        foreach($request->amount as $key => $value)
-        {
-            $array[$key] = ['amount' => $value]; 
-        }
-       */
-
+        // foreach($request->amount as $key => $value)
+        // {
+        //     $array[$key] = ['amount' => $value]; 
+        // }
+       
         $order = Order::create([
             'user_id' => $request->user_id,
             'status_id' => $request->status_id,

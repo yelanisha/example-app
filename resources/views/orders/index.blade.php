@@ -2,6 +2,10 @@
 
 @section('title', 'Все товары')
 
+@section('create_butt')
+    <a href="{{ route('orders.create') }}" class="nav_li_a decnone">Create</a>
+@endsection
+
 @section('content')
     <div class="container-sm justfify-content-center mt-2">
         <table class="table">
@@ -20,7 +24,9 @@
                         <th scope="row">{{ $order->id }}</th>
                         <td>{{ $order->status }}</td>
                         <td>{{ $order->comment }}</td>
-                        <td>{{ $order->owner->name }}</td>
+                        <td>
+                            {{ $order->owner != Null ? $order->owner->name : 'Не найдено'  }}
+                        </td>
                         <td>
                             <form action="{{ route('orders.destroy', $order->id) }}" method="POST">
                                 <a href="{{ route('orders.show', $order->id) }}">
