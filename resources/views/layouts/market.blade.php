@@ -45,19 +45,17 @@
             </nav>
             <div class="login">
                 @if (Route::has('login'))
-                    <nav>
+                    <nav style="width: 100%;">
                         @auth
-                            <a href="{{ url('/dashboard') }}" class="nav-item">Dashboard</a>
+                            <a href="{{ url('/dashboard') }}" class="login_button decnone">Dashboard</a>
                         @else
-                            <a href="{{ route('login') }}" class="nav-item">Login</a>
+                            <a href="{{ route('login') }}" class="login_button decnone">Login</a>
                             @if (Route::has('register'))
-                                <a href="{{ route('register') }}" class="nav-item">Sign up</a>
+                                <a href="{{ route('register') }}" class="signbut decnone">Sign up</a>
                             @endif
                         @endauth
                     </nav>
                 @endif
-                <a href="login.html" class="login_button decnone">Login</a>
-                <a href="registration.html" class="signbut decnone">Sign up</a>
             </div>
         </div>
     </header>
