@@ -20,7 +20,7 @@
                             <th scope="row">{{ $item->id }}</th>
                             <td>{{ $item->name }}</td>
                             <td>
-                                <input value="{{ $item->pivot->amount }}" name="products[{{ $item->id }}][amount]">
+                                <input value="{{ $item->pivot->amount }}" class="comm_input" name="products[{{ $item->id }}][amount]">
                             </td>
                         </tr>
                     @endforeach
