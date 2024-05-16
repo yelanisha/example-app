@@ -36,13 +36,26 @@
                 <a href="/"><img src="{{ asset('css/img/Logo.png') }}" alt="" class="logo"></a>
                 <ul class="nav">
                     <li class="nav_li"><a href="/" class="nav_li_a decnone">Menu</a></li>
-                    <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Products</a></li>
+                    <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Products</a>
+                    </li>
                     <li class="nav_li"><a href="{{ route('orders.index') }}" class="nav_li_a decnone">Orders</a></li>
                     <li class="nav_li"><a href="{{ route('cart.show') }}" class="nav_li_a decnone">Cart</a></li>
                     <li class="nav_li">@yield('create_butt')</li>
                 </ul>
             </nav>
             <div class="login">
+                @if (Route::has('login'))
+                    <nav>
+                        @auth
+                            <a href="{{ url('/dashboard') }}" class="nav-item">Dashboard</a>
+                        @else
+                            <a href="{{ route('login') }}" class="nav-item">Login</a>
+                            @if (Route::has('register'))
+                                <a href="{{ route('register') }}" class="nav-item">Sign up</a>
+                            @endif
+                        @endauth
+                    </nav>
+                @endif
                 <a href="login.html" class="login_button decnone">Login</a>
                 <a href="registration.html" class="signbut decnone">Sign up</a>
             </div>
@@ -54,24 +67,28 @@
     </main>
 
     <footer>
-      <div class="footer1">
-          <a href="index.html"><img src="{{ asset('css/img/Logo.png') }}" alt="" class="logo"></a>
-          <ul class="footer1_nav">
-              <li class="nav_li"><a href="/" class="nav_li_a decnone">Menu</a></li>
-              <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Products</a></li>
-              <li class="nav_li"><a href="{{ route('orders.index') }}" class="nav_li_a decnone">Orders</a></li>
-          </ul>
-      </div>
-      <div class="footer2">
-          <span class="footer2_text">© 2024 EATLY All Rights Reserved.</span>
-          <div class="footer2_social">
-              <a href="#"><img src="{{ asset('css/img/inst.png') }}" alt="" class="footer2_social_img"></a>
-              <a href="#"><img src="{{ asset('css/img/in.png') }}" alt="" class="footer2_social_img"></a>
-              <a href="#"><img src="{{ asset('css/img/fc.png') }}" alt="" class="footer2_social_img"></a>
-              <a href="#"><img src="{{ asset('css/img/tw.png') }}" alt="" class="footer2_social_img"></a>
-          </div>
-      </div>
-  </footer>
+        <div class="footer1">
+            <a href="index.html"><img src="{{ asset('css/img/Logo.png') }}" alt="" class="logo"></a>
+            <ul class="footer1_nav">
+                <li class="nav_li"><a href="/" class="nav_li_a decnone">Menu</a></li>
+                <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Products</a></li>
+                <li class="nav_li"><a href="{{ route('orders.index') }}" class="nav_li_a decnone">Orders</a></li>
+            </ul>
+        </div>
+        <div class="footer2">
+            <span class="footer2_text">© 2024 EATLY All Rights Reserved.</span>
+            <div class="footer2_social">
+                <a href="#"><img src="{{ asset('css/img/inst.png') }}" alt=""
+                        class="footer2_social_img"></a>
+                <a href="#"><img src="{{ asset('css/img/in.png') }}" alt=""
+                        class="footer2_social_img"></a>
+                <a href="#"><img src="{{ asset('css/img/fc.png') }}" alt=""
+                        class="footer2_social_img"></a>
+                <a href="#"><img src="{{ asset('css/img/tw.png') }}" alt=""
+                        class="footer2_social_img"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
