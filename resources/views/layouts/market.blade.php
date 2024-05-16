@@ -38,6 +38,7 @@
                     <li class="nav_li"><a href="/" class="nav_li_a decnone">Menu</a></li>
                     <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Products</a></li>
                     <li class="nav_li"><a href="{{ route('orders.index') }}" class="nav_li_a decnone">Orders</a></li>
+                    <li class="nav_li"><a href="{{ route('cart.show') }}" class="nav_li_a decnone">Cart</a></li>
                     <li class="nav_li">@yield('create_butt')</li>
                 </ul>
             </nav>
