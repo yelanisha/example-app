@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="container-sm justfify-content-center mt-2">
-        <form action="{{ route('orders.store') }}" method="POST">
+        <form action="{{ route('orders.store') }}" method="POST" class="form_margin" style="flex-direction: column">
             @csrf
             <table class="table">
                 <thead>
@@ -28,7 +28,7 @@
             </table>
             <input hidden value="1" name="user_id">
             <input hidden value="0" name="status_id">
-            <button type="submit" class="btn btn-primary">Оформить заказ</button>
+            <button type="submit" class="btn btn-primary">Place an order</button>
         </form>
     </div>
 @endsection

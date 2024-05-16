@@ -160,9 +160,9 @@
     </section>
     <section class="get">
         <p class="get_text">GET 50%</p>
-        <form action="#">
+        <form action="{{ route('products.index') }}">
             <input type="email" class="get_input" placeholder=" Enter Your Email Address">
-            <a href="index.html" class="input_text">SUBSCRIBE</a>
+            <a href="/" class="input_text">SUBSCRIBE</a>
         </form>
         <img src="{{ asset('css/img/fdget.png') }}" alt="" class="get_img">
     </section>
