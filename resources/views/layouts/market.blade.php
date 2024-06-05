@@ -9,11 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,9 +31,10 @@
             <nav>
                 <a href="/"><img src="{{ asset('css/img/Logo.png') }}" alt="" class="logo"></a>
                 <ul class="nav">
-                    <li class="nav_li"><a href="/" class="nav_li_a decnone">Menu</a></li>
-                    <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Products</a>
-                    </li>
+                    <li class="nav_li"><a href="/" class="nav_li_a decnone">Главная</a></li>
+                    <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">О нас</a></li>
+                    <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Каталог</a></li>
+                    <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Где нас найти?</a></li>
                     <li class="nav_li"><a href="{{ route('orders.index') }}" class="nav_li_a decnone">Orders</a></li>
                     <li class="nav_li"><a href="{{ route('cart.show') }}" class="nav_li_a decnone">Cart</a></li>
                     <li class="nav_li">@yield('create_butt')</li>
@@ -49,9 +46,9 @@
                         @auth
                             <a href="{{ url('/dashboard') }}" class="login_button decnone">Dashboard</a>
                         @else
-                            <a href="{{ route('login') }}" class="login_button decnone">Login</a>
+                            <a href="{{ route('login') }}" class="login_button decnone">Вход</a>
                             @if (Route::has('register'))
-                                <a href="{{ route('register') }}" class="signbut decnone">Sign up</a>
+                                <a href="{{ route('register') }}" class="signbut decnone">Регистрация</a>
                             @endif
                         @endauth
                     </nav>
