@@ -31,8 +31,7 @@
             <nav>
                 <a href="/"><img src="{{ asset('css/img/Logo.png') }}" alt="" class="logo"></a>
                 <ul class="nav">
-                    <li class="nav_li"><a href="/" class="nav_li_a decnone">Главная</a></li>
-                    <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">О нас</a></li>
+                    <li class="nav_li"><a href="/" class="nav_li_a decnone">О нас</a></li>
                     <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Каталог</a></li>
                     <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Где нас
                             найти?</a></li>

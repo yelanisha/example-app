@@ -4,34 +4,13 @@
 
 @section('content')
     <section class="mainpage">
-        <div class="mainpage_block1">
-            <div class="mainpage_block1_enjoy">
-                <img src="{{ asset('css/img/Over 1000.png') }}" alt="" class="mainpade_block1_enjoy_photo">
-                <p class="mainpage_bl1_enjoy_title">Enjoy Foods All<br>
-                    Over The <span class="text_color">World</span></p>
-                <p class="mainpage_bl1_enjoy_sub">EatLy help you set saving goals, earn cash back offers, Go<br> to
-                    disclaimer for more details and get paychecks up to two<br> days early. Get a <span
-                        class="text_color">$20 bonus.</span></p>
-                <img src="{{ asset('css/img/Trust Reviews.png') }}" alt="" class="mainpage_bl1_enjoy_photo">
-            </div>
-            <div class="mainpage_block1_photo">
-                <img src="{{ asset('css/img/Hero.png') }}" alt="">
-            </div>
+        <div class="mainpage_block1_enjoy">
+            <img src="{{ asset('css/img/logo2.png') }}" alt="" class="mainpade_block1_enjoy_photo">
+            <p class="mainpage_bl1_enjoy_title">Поток технологий в ваших руках.</p>
+            <p class="mainpage_bl1_enjoy_sub">MobileFlow: Ваш лучший помощник в цифровом мире!</p>
         </div>
-        <div class="mainpage_block2">
-            <div class="mainpage_bl2_items">
-                <span class="mainpage_bl2_title">10K+</span>
-                <span class="mainpage_bl2_sub">Satisfied Costumers<br>
-                    All Great Over The World </span>
-            </div>
-            <div class="mainpage_bl2_items mainpage_bl2_items--border">
-                <span class="mainpage_bl2_title">4M</span>
-                <span class="mainpage_bl2_sub">Healthy Dishes Sold <br>Including Milk Shakes Smooth</span>
-            </div>
-            <div class="mainpage_bl2_items">
-                <span class="mainpage_bl2_title">99.99%</span>
-                <span class="mainpage_bl2_sub">Reliable Customer Support<br> We Provide Great Experiences</span>
-            </div>
+        <div class="mainpage_block1_photo">
+            <img src="{{ asset('css/img/phones.png') }}" alt="">
         </div>
     </section>
     <section class="top">
