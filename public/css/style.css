@@ -19,7 +19,7 @@ html {
 }
 
 .nav_li_a:hover {
-    color: #b2e5d4;
+    color: #DCE5E2;
     transition: 0.3s ease;
     border-bottom: black solid 1px;
 }
@@ -80,14 +80,14 @@ nav {
     line-height: 26.74px;
     width: 135px;
     height: 63px;
-    background-color: #b2e5d4;
-    color: #f9f9f9;
+    background-color: #DCE5E2;
+    color: #000;
     border-radius: 18px;
 }
 
 .signbut:hover {
-    color: #b2e5d4;
-    border: 2px solid #b2e5d4;
+    color: #000;
+    border: 1px solid #DCE5E2;
     background-color: inherit;
     line-height: 26.74px;
     font-size: 17.83px;
@@ -113,12 +113,12 @@ nav {
 }
 
 .mainpage_bl1_enjoy_title {
-    font-family: Poppins;
+    font-family: Jost;
     font-weight: 600;
     font-size: 75px;
     line-height: 90px;
     color: #201f1f;
-    margin: 18px 0 16px;
+    margin: 18px 0 30px;
 }
 
 .text_color {
@@ -128,14 +128,12 @@ nav {
 .mainpage_bl1_enjoy_sub {
     font-family: inter;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 28px;
-    color: #676767;
-    margin-bottom: 50px;
+    color: #000;
 }
 
 .top {
-    border-top: 2px solid #CBCBCB;
     width: 90%;
     margin: auto;
     padding-top: 100px;
@@ -144,11 +142,11 @@ nav {
 }
 
 .title {
-    font-family: Poppins;
+    font-family: Jost;
     font-weight: 600;
     font-size: 45px;
     line-height: 26px;
-    color: #323142;
+    color: #000;
     text-align: center;
 }
 
@@ -156,10 +154,10 @@ nav {
     display: flex;
     justify-content: space-between;
     margin-top: 76px;
-    flex-wrap: wrap;
 }
 
 .top_block {
+    width: 17%;
     border-radius: 35px;
     box-shadow: 0px 20px 13px 7px #E5E5E5B2;
     border: 2px solid #F4F4F6;
@@ -170,8 +168,9 @@ nav {
 }
 
 .top_img {
-    width: 186px;
+    width: max-content;
     height: 186px;
+    margin: auto;
 }
 
 .bl_sub {
@@ -187,55 +186,17 @@ nav {
     margin: 10px 0;
 }
 
-.bl_sub_yel {
-    color: #DAA31A;
-}
-
-.bl_sub_yel--bcg {
-    background-color: #F7EDD0;
-}
-
-.bl_sub_red {
-    color: #FB471D;
-}
-
-.bl_sub_red--bcg {
-    background-color: #f7c5ba;
-}
-
-.bl_sub_green {
-    color: #309D5B;
-}
-
-.bl_sub_green--bcg {
-    background-color: #64e598;
-}
-
 .top_name {
-    font-family: Poppins;
-    font-weight: 600;
+    font-family: Jost;
+    font-weight: 500;
     font-size: 23px;
     color: #323142;
 }
 
-.timenstar {
-    color: #8E97A6;
-    font-family: Manrope;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 23px;
-}
-
-.top_timenstar {
-    display: flex;
-    align-items: center;
-    margin: 9px 0 15px;
-}
-
 .price {
-    font-family: Manrope;
+    font-family: Inter;
     font-size: 25.94px;
-    font-weight: 700;
+    font-weight: 500;
     color: #323142;
     line-height: 40.34px;
 }
@@ -243,27 +204,6 @@ nav {
 .price_size {
     font-size: 18.81px;
     color: #8E97A6;
-}
-
-.customer {
-    border-top: 2px solid #CBCBCB;
-    width: 90%;
-    margin: auto;
-    padding-top: 100px;
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
-
-.opinion {
-    width: 28%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    border-radius: 35px;
-    box-shadow: 0px 13px 20px 7px #E5E5E5B2;
-    border: 2px solid #F4F4F6;
-    padding: 37px 20px 25px;
 }
 
 .opinion_note {
@@ -290,7 +230,7 @@ nav {
     display: inline-flex;
     justify-content: space-between;
     width: 110%;
-    margin-top: 80px;
+    margin-top: 76px;
 }
 
 .note_names_pers_text_name {
@@ -309,19 +249,6 @@ nav {
     color: #5E5D5D;
 }
 
-.opinion_text {
-    font-family: Poppins, serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 18px;
-    line-height: 26.12px;
-    color: #636363;
-}
-
-.opinion_stars {
-    margin-top: 39px;
-}
-
 input {
     visibility: hidden;
 }
@@ -338,17 +265,19 @@ input {
 label {
     width: 50px;
     height: 25px;
-    background-color: #6C5FBC;
+    background-color: #DCE5E2;
     opacity: 30%;
+    border: 1px solid black;
     border-radius: 7px;
     box-sizing: border-box;
 }
 
 label:hover {
-    background-color: #6C5FBC;
+    background-color: #DCE5E2;
     cursor: pointer;
     transition: 0.6s ease;
     opacity: 100%;
+    border: none;
 }
 
 #r1:checked~.slider {
@@ -448,7 +377,7 @@ form {
 
 footer {
     background-color: #EAEAEA;
-    margin-top: 156px;
+    margin-top: 135px;
 }
 
 .footer1 {
@@ -462,7 +391,7 @@ footer {
 
 .footer1_nav {
     display: flex;
-    width: 25%;
+    width: 40%;
     justify-content: space-between;
 }
 

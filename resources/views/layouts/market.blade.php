@@ -29,7 +29,7 @@
     <header>
         <div class="header">
             <nav>
-                <a href="/"><img src="{{ asset('css/img/Logo.png') }}" alt="" class="logo"></a>
+                <a href="/"><img src="{{ asset('css/img/Logo2.png') }}" alt="" class="logo"></a>
                 <ul class="nav">
                     <li class="nav_li"><a href="/" class="nav_li_a decnone">О нас</a></li>
                     <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Каталог</a></li>
@@ -64,25 +64,16 @@
 
     <footer>
         <div class="footer1">
-            <a href="index.html"><img src="{{ asset('css/img/Logo.png') }}" alt="" class="logo"></a>
+            <a href="index.html"><img src="{{ asset('css/img/Logo2.png') }}" alt="" class="logo"></a>
             <ul class="footer1_nav">
-                <li class="nav_li"><a href="/" class="nav_li_a decnone">Menu</a></li>
-                <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Products</a></li>
+                <li class="nav_li"><a href="/" class="nav_li_a decnone">О нас</a></li>
+                <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Каталог</a></li>
+                <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Где нас найти?</a></li>
                 <li class="nav_li"><a href="{{ route('orders.index') }}" class="nav_li_a decnone">Orders</a></li>
             </ul>
         </div>
         <div class="footer2">
-            <span class="footer2_text">© 2024 EATLY All Rights Reserved.</span>
-            <div class="footer2_social">
-                <a href="#"><img src="{{ asset('css/img/inst.png') }}" alt=""
-                        class="footer2_social_img"></a>
-                <a href="#"><img src="{{ asset('css/img/in.png') }}" alt=""
-                        class="footer2_social_img"></a>
-                <a href="#"><img src="{{ asset('css/img/fc.png') }}" alt=""
-                        class="footer2_social_img"></a>
-                <a href="#"><img src="{{ asset('css/img/tw.png') }}" alt=""
-                        class="footer2_social_img"></a>
-            </div>
+            <span class="footer2_text">© 2024 MOBILEFLOW All Rights Reserved.</span>
         </div>
     </footer>
 </body>
