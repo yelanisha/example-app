@@ -102,12 +102,14 @@ nav {
 }
 
 .mainpage {
+    padding-left: 56px;
     margin: auto;
     margin-top: 65px;
     display: flex;
     align-items: center;
     width: 90%;
     background-color: #DCE5E2;
+    border-radius: 32px;
 }
 
 .mainpage_bl1_enjoy_title {
