@@ -68,7 +68,7 @@
             <ul class="footer1_nav">
                 <li class="nav_li"><a href="/" class="nav_li_a decnone">О нас</a></li>
                 <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Каталог</a></li>
-                <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Где нас найти?</a></li>
+                <li class="nav_li"><a href="{{ route('wheres.index') }}" class="nav_li_a decnone">Где нас найти?</a></li>
                 <li class="nav_li"><a href="{{ route('orders.index') }}" class="nav_li_a decnone">Orders</a></li>
             </ul>
         </div>
