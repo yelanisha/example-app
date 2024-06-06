@@ -34,26 +34,28 @@
                     <li class="nav_li"><a href="/" class="nav_li_a decnone">Главная</a></li>
                     <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">О нас</a></li>
                     <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Каталог</a></li>
-                    <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Где нас найти?</a></li>
+                    <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Где нас
+                            найти?</a></li>
+                    <li class="nav_li"><a href="{{ route('cart.show') }}" class="nav_li_a_img decnone"><img
+                                src="{{ asset('css/img/cart.png') }}" alt=""></a></li>
                     <li class="nav_li"><a href="{{ route('orders.index') }}" class="nav_li_a decnone">Orders</a></li>
-                    <li class="nav_li"><a href="{{ route('cart.show') }}" class="nav_li_a decnone">Cart</a></li>
                     <li class="nav_li">@yield('create_butt')</li>
                 </ul>
+                <div class="login">
+                    @if (Route::has('login'))
+                        <nav style="width: 100%;">
+                            @auth
+                                <a href="{{ url('/dashboard') }}" class="login_button decnone">Dashboard</a>
+                            @else
+                                <a href="{{ route('login') }}" class="login_button decnone">Вход</a>
+                                @if (Route::has('register'))
+                                    <a href="{{ route('register') }}" class="signbut decnone">Регистрация</a>
+                                @endif
+                            @endauth
+                        </nav>
+                    @endif
+                </div>
             </nav>
-            <div class="login">
-                @if (Route::has('login'))
-                    <nav style="width: 100%;">
-                        @auth
-                            <a href="{{ url('/dashboard') }}" class="login_button decnone">Dashboard</a>
-                        @else
-                            <a href="{{ route('login') }}" class="login_button decnone">Вход</a>
-                            @if (Route::has('register'))
-                                <a href="{{ route('register') }}" class="signbut decnone">Регистрация</a>
-                            @endif
-                        @endauth
-                    </nav>
-                @endif
-            </div>
         </div>
     </header>
 

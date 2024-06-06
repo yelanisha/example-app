@@ -1,6 +1,6 @@
 @extends('layouts.market')
 
-@section('title', 'Eatly')
+@section('title', 'MobileFlow')
 
 @section('content')
     <section class="mainpage">
