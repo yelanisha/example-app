@@ -11,6 +11,6 @@ class WhereController extends Controller
      */
     public function index()
     {
-        return view('wheres.index', compact('wheres'));
+        return view('wheres.index');
     }
 }
