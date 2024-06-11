@@ -44,11 +44,47 @@
                     @if (Route::has('login'))
                         <nav style="width: 100%;">
                             @auth
-                                <a href="{{ url('/dashboard') }}" class="login_button decnone">Dashboard</a>
+                                {{-- <a href="{{ url('/dashboard') }}" class="login_button decnone">Dashboard</a> --}}
+                                <div class="hidden sm:flex sm:items-center sm:ms-6">
+                                    <x-dropdown align="right" width="48">
+                                        <x-slot name="trigger">
+                                            <button
+                                                class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">
+                                                <div>{{ Auth::user()->name }}</div>
+                                            </button>
+                                        </x-slot>
+
+                                        <x-slot name="content">
+                                            <x-dropdown-link :href="route('profile.edit')">
+                                                {{ __('Profile') }}
+                                            </x-dropdown-link>
+
+                                            <!-- Authentication -->
+                                            <form method="POST" action="{{ route('logout') }}">
+                                                @csrf
+
+                                                <x-dropdown-link :href="route('logout')"
+                                                    onclick="event.preventDefault();
+                                                                    this.closest('form').submit();">
+                                                    {{ __('Log Out') }}
+                                                </x-dropdown-link>
+                                            </form>
+                                        </x-slot>
+                                    </x-dropdown>
+                                </div>
+                                <form method="POST" action="{{ route('logout') }}" class="signbut decnone ml">
+                                    @csrf
+
+                                    <x-dropdown-link :href="route('logout')"
+                                        onclick="event.preventDefault();
+                                                        this.closest('form').submit();">
+                                        {{ __('Log Out') }}
+                                    </x-dropdown-link>
+                                </form>
                             @else
                                 <a href="{{ route('login') }}" class="login_button decnone">Вход</a>
                                 @if (Route::has('register'))
-                                    <a href="{{ route('register') }}" class="signbut decnone">Регистрация</a>
+                                    <a href="{{ route('register') }}" class="signbut decnone ml">Регистрация</a>
                                 @endif
                             @endauth
                         </nav>
@@ -68,7 +104,8 @@
             <ul class="footer1_nav">
                 <li class="nav_li"><a href="/" class="nav_li_a decnone">О нас</a></li>
                 <li class="nav_li"><a href="{{ route('products.index') }}" class="nav_li_a decnone">Каталог</a></li>
-                <li class="nav_li"><a href="{{ route('wheres.index') }}" class="nav_li_a decnone">Где нас найти?</a></li>
+                <li class="nav_li"><a href="{{ route('wheres.index') }}" class="nav_li_a decnone">Где нас найти?</a>
+                </li>
                 <li class="nav_li"><a href="{{ route('orders.index') }}" class="nav_li_a decnone">Orders</a></li>
             </ul>
         </div>

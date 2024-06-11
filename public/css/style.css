@@ -95,7 +95,7 @@ nav {
 }
 
 .login {
-    width: 15%;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -364,6 +364,7 @@ input {
 svg {
     visibility: hidden;
 }
+
 .input_text:hover {
     color: #6c5fbc;
     border: 1px solid #6c5fbc;
@@ -596,6 +597,11 @@ textarea {
 .info_line {
     text-decoration: none;
 }
-.mbpx{
+
+.mbpx {
     margin-bottom: 80px;
+}
+
+.ml {
+    margin-left: 30px;
 }
