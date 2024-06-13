@@ -8,7 +8,12 @@
 
     <form method="POST" action="{{ route('login') }}">
         @csrf
-
+        <div>
+            <x-input-label for="login" :value="__('Log in')" />
+            <x-text-input id="login" class="block mt-1 w-full comm_input" type="text" name="login"
+                :value="old('login')" required autofocus autocomplete="username" />
+            <x-input-error :messages="$errors->get('login')" class="mt-2 comm_input" />
+        </div>
         <!-- Email Address -->
         <div>
             <x-input-label for="email" :value="__('Email')" />
