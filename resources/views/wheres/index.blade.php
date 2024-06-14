@@ -9,7 +9,7 @@
             width="722" height="400" frameborder="0"></iframe>
         <div class="info">
             <span class="price">Казань, Савинский Район, Ул.Батурина, 4, 155710</span>
-            <a href="tel:+79212488719" class="price info_line">+7 (921) 248-87-19</a>
+            <a href="tel:+74952762147" class="price info_line">+7 (495) 276-21-47</a>
             <a href="mailto:mobileflow@mail.ru" class="price info_line">mobileflow@mail.ru</a>
         </div>
     </section>
