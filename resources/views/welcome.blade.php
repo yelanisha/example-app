@@ -5,12 +5,12 @@
 @section('content')
     <section class="mainpage">
         <div class="mainpage_block1_enjoy">
-            <img src="{{ asset('css/img/logo2.png') }}" alt="" class="mainpade_block1_enjoy_photo">
+            <img src="{{ asset('css/img/logo2.svg') }}" alt="" class="mainpade_block1_enjoy_photo">
             <p class="mainpage_bl1_enjoy_title">Поток технологий в ваших руках.</p>
             <p class="mainpage_bl1_enjoy_sub">MobileFlow: Ваш лучший помощник в цифровом мире!</p>
         </div>
         <div class="mainpage_block1_photo">
-            <img src="{{ asset('css/img/phones.png') }}" alt="">
+            <img src="{{ asset('css/img/phones.svg') }}" alt="">
         </div>
     </section>
     <section class="top">
