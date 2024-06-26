@@ -6,6 +6,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\WhereController;
+use App\Http\Controllers\CategoryController;
 
 
 Route::get('/', function () {
@@ -19,6 +20,8 @@ Route::resource('/orders', OrderController::class);
 Route::singleton('/cart', CartController::class);
 
 Route::resource('/wheres', WhereController::class);
+
+Route::resource('/category', CategoryController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

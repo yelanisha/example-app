@@ -6,6 +6,14 @@
     <a href="{{ route('orders.create') }}" class="nav_li_a decnone">Create</a>
 @endsection
 
+@section('cart_butt')
+<a href="{{ route('cart.show') }}" class="nav_li_a_img decnone"><img src="{{ asset('css/img/cart.svg') }}" alt=""></a>
+@endsection
+
+@section('order_butt')
+<a href="{{ route('orders.index') }}" class="nav_li_a decnone">Orders</a>
+@endsection
+
 @section('content')
     <div class="container-sm justfify-content-center mt-2">
         <table class="table">
