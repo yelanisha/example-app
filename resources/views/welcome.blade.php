@@ -30,9 +30,9 @@
             <p class="price">17 990₽</p>
         </div>
         <div class="top_block--width">
-            <img src="{{ asset('css/img/xi.png') }}" alt="" class="top_img">
-            <p class="top_name">Xiaomi Redmi 9</p>
-            <p class="price">18 974₽</p>
+            <img src="{{ asset('css/img/p5.png') }}" alt="" class="top_img">
+            <p class="top_name">Huawei P60 Pro</p>
+            <p class="price">74 990₽</p>
         </div>
         <div class="top_block--width">
             <img src="{{ asset('css/img/t4.png') }}" alt="" class="top_img">

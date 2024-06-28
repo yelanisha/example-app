@@ -1,5 +1,5 @@
 <div class="top_block">
-    <img src="{{ asset('css/img/ap.jpg') }}" alt="" class="top_img">
+    <img src="{{ $product->image }}" alt="" class="top_img">
     <p class="top_name">{{ $product->name }}</p>
     <p class="price">{{ $product->description }}</p>
             <div class="card_buttons">
